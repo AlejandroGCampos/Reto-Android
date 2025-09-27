@@ -1,0 +1,12 @@
+package com.example.dailymotivation.network;
+
+import com.example.dailymotivation.model.QuoteResponse;
+import java.util.List;
+import retrofit2.Call;
+import retrofit2.http.GET;
+
+public interface ZenQuotesApi {
+    @GET("api/random")
+    Call<List<QuoteResponse>> getRandomQuote();
+}
+
